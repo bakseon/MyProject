@@ -13,7 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO.Ports;
-//version2
+//version2 
+//version3
 namespace SerialCommunication
 {
     /// <summary>
@@ -25,7 +26,7 @@ namespace SerialCommunication
         public MainWindow()
         {
             InitializeComponent();
-            this.serial = new SerialPort(portName: $"COM9", baudRate: 9600, parity: Parity.None, dataBits: 8, stopBits: StopBits.One);
+            this.serial = new SerialPort(portName: $"COM9", baudRate: 9600, parity: Parity.None, dataBits: 8, stopBits: StopBits.One);  //version_3 <== 친구야 이거 수정됐다.
             this.serial.Encoding = Encoding.UTF8;
         }
 
