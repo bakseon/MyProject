@@ -41,6 +41,7 @@ namespace SerialCommunication
             else
             {
                 MessageBox.Show(messageBoxText: $"시리얼 통신이 안 되었습니다.");
+                String.ValueOf("Hahahahahahahahaha")        //version_4 <== 
             }
 
         }
